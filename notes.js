@@ -15,4 +15,11 @@ const notes = [
     }
 ]
 
-console.log(notes)
+for (const note of notes) {
+    console.log(`ID ${note.id} 
+    Subject is ${note.subject}
+    Date learned: ${note.date}
+    It made me feel ${note.feeling}
+    I spent ${note.timeSpint} on it
+    ------------------------------`)
+}
