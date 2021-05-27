@@ -15,11 +15,15 @@ const notes = [
     }
 ]
 
+const searchTerm = "hungry"
+
 for (const note of notes) {
+    if (searchTerm === note.feeling) {
     console.log(`ID ${note.id} 
     Subject is ${note.subject}
     Date learned: ${note.date}
     It made me feel ${note.feeling}
     I spent ${note.timeSpint} on it
     ------------------------------`)
+    }
 }
